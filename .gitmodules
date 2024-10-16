@@ -1,3 +1,0 @@
-[submodule "wezterm"]
-	path = wezterm
-	url = git@github.com:kings099/MyWezterm-config.git
