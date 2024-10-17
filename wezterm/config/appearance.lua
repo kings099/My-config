@@ -26,20 +26,25 @@ return {
    -- background
    window_background_opacity = 0.95,
    win32_system_backdrop = 'Acrylic',
-   window_background_gradient = {
-      colors = { '#881798', '#881798' },
-      -- Specifices a Linear gradient starting in the top left corner.
-      orientation = { Linear = { angle = -45.0 } },
-   },
+   -- window_background_gradient = {
+   --    colors = { '#881798', '#881798' },
+   --    -- Specifices a Linear gradient starting in the top left corner.
+   --    orientation = { Linear = { angle = -45.0 } },
+   -- },
+   macos_window_background_blur = 15,
    background = {
       {
          source = { File = wezterm.config_dir .. '/backdrops/space.jpg' },
+         height = "100%",
+         width = "100%",
+         opacity = 0.4,
+
       },
       {
          source = { Color = '#1A1B26' },
          height = '100%',
          width = '100%',
-         opacity = 0.85,
+         opacity = 0.45,
       },
    },
 
@@ -78,7 +83,7 @@ return {
       top = 12,
       bottom = 7,
    },
-   window_close_confirmation = 'AlwaysPrompt',
+   window_close_confirmation = 'NeverPrompt',
    window_frame = {
       active_titlebar_bg = '#0F2536',
       inactive_titlebar_bg = '#090909',
