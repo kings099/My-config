@@ -1,11 +1,11 @@
 span.mtk16 {
-    text-shadow: 0 0 20px #4ec9b0;
+    text-shadow: 0 0 15px #f276f2;
     }
     
     div.quick-input-widget {
     --vscode-quickInput-background: transparent !important;
     
-    backdrop-filter: blur(20px) brightness(140%);
+    backdrop-filter: blur(30px) brightness(140%);
     }
     
     div.monaco-inputbox {
@@ -33,3 +33,8 @@ div.monaco-hover {
 
 backdrop-filter: blur(20px) brightness(110%);
 }
+.editor-group-watermark > .letterpress{
+    background-image: url("https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode-Thick.png") !important;
+    opacity: .75;
+    aspect-ratio: 3/2 !important;
+  }
